@@ -1,0 +1,12 @@
+#ajax-loading-mask {
+    display: none;
+    background-color: white;
+    opacity: .5;
+    position: absolute;
+    z-index: 99;
+    text-align: center;
+    background-image: url("../../images/opc-ajax-loader.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 3;
+}

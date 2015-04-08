@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <TSA_Checkout>
+            <version>0.0.0.0</version>
+        </TSA_Checkout>
+    </modules>
+    <frontend>
+        <layout>
+            <updates>
+                <tsa_checkout>
+                    <file>tsa/tsa_checkout.xml</file>
+                </tsa_checkout>
+            </updates>
+        </layout>
+        <events>
+            <controller_action_postdispatch_checkout_cart_add>
+                <observers>
+                    <tsa_checkout_observer>
+                        <type>singleton</type>
+                        <class>TSA_Checkout_Model_Observer</class>
+                        <method>addProductAjax</method>
+                    </tsa_checkout_observer>
+                </observers>
+            </controller_action_postdispatch_checkout_cart_add>
+        </events>
+    </frontend>
+</config>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<layout>
+    <catalog_product_view>
+        <reference name="head">
+            <action method="addItem">
+                <type>skin_js</type>
+                <name>js/tsa/tsa_ajax_product_page_checkout.js</name>
+            </action>
+            <action method="addItem">
+                <type>skin_css</type>
+                <name>css/tsa/tsa_ajax_checkout.css</name>
+            </action>
+        </reference>
+        <reference name="content">
+            <block type="core/template" before = "-" name="newAjaxMaskBlock" template="tsa/checkout/mask.phtml"/>
+        </reference>
+    </catalog_product_view>
+    <catalog_category_view>
+        <reference name="head">
+            <action method="addItem">
+                <type>skin_js</type>
+                <name>js/tsa/tsa_ajax_category_page_checkout.js</name>
+            </action>
+            <action method="addItem">
+                <type>skin_css</type>
+                <name>css/tsa/tsa_ajax_checkout.css</name>
+            </action>
+        </reference>
+        <reference name="content">
+            <block type="core/template" before = "-" name="newAjaxMaskBlock" template="tsa/checkout/mask.phtml"/>
+        </reference>
+    </catalog_category_view>
+
+
+
+
+</layout>
